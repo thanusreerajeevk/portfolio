@@ -1,0 +1,342 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+.container{
+    width: 100%;
+    height: 100vh; /* vh =19.2px */
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    width: 85%;
+    display: flex; /* side by side */
+    justify-content: space-between; /* creating space between 2 tags */
+    margin-left: 7%;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.listitems{
+    display: inline-block; /* to keep in a line */
+    margin: 10px 20px;/* top+bottom & left+rignt */
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{  /* selectors:pseudo  class{properties;} */
+    color: rgb(52, 21, 189);
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title_h1{
+    font-size: 50px;
+}
+#name{
+    color: rgb(205, 24, 24);
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 8px;
+    border-style: hidden;
+    box-shadow: 1px 4px 4px 1px gray;
+    font-weight: bold;
+}
+.images{
+    position: absolute;
+    width:45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left:50%;
+    transform:translatex(-50%);
+    transition:bottom 1s,left 1s;
+    bottom:0px;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girls{
+    left: 40%;
+}
+
+#about{
+    margin: 15% 8% 0px 8px;
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+    gap: 2rem;
+}
+.about_details{
+    font-size: 18px;
+    text-align: justify;
+}
+.Information{
+    margin-top: 2rem;
+}
+.info-box{
+    margin-bottom: 1rem;
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0px 8%; 
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+ .skill-img img{
+    width:90%;
+    padding-left: 4rem;
+ }  
+ .bar-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+ } 
+ .base-bar{
+    width: 100%;
+    height :0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+
+ }
+ .html-bar{
+    background-color: rgb(102, 0, 255);
+    width:95%;
+ }
+ .css-bar{
+    background-color: rgb(0, 255, 102);
+    width:88%;
+ }
+ .js-bar{
+    background-color: rgb(255, 0, 0);
+    width:89%;
+ }
+ .react-bar{
+    background-color: rgb(0, 191, 255);
+    width:85%;
+ }
+ .icons{
+    display: flex;
+    gap: 3rem;
+   justify-content: center;
+   /* vertically center */
+   align-items: center;
+ 
+ }
+ .linkedin{
+    
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+ 
+ }
+ .github{
+   
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+ 
+ }
+ .twitter{
+    
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+ 
+ }
+ .whatsapp{
+    
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+ 
+ }
+ .instagram{
+    
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+ 
+ }
+ .facebook{
+    
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     /* border: 1px solid; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+       
+ }
+ .facebook:hover{
+     background-image: linear-gradient(to bottom right , yellow , red);
+ }
+ 
+ .facebook:hover i{
+     color: white;
+     animation: shake 0.75s;
+ 
+ }
+ .instagram:hover{
+ 
+     background-image: linear-gradient(to bottom right , yellow , red);
+ }
+ .instagram:hover i{
+     color: white;
+     animation: shake 0.75s;
+ 
+ }
+ .linkedin:hover{
+ 
+     background-image: linear-gradient(to bottom right , yellow , red);
+ 
+ }
+ .linkedin:hover i{
+     color: white;
+     animation: shake 0.75s;
+ 
+ }
+ .whatsapp:hover{
+ 
+     background-image: linear-gradient(to bottom right , yellow , red);
+ 
+ }
+ .whatsapp:hover i{
+     color: white;
+     animation: shake 0.75s;
+ 
+ }
+ .github:hover{
+ 
+     background-image: linear-gradient(to bottom right , yellow , red);
+ 
+ }
+ .github:hover i{
+     color: white;
+     animation: shake 0.75s;
+ 
+ }
+ .twitter:hover{
+     background-image: linear-gradient(to bottom right , yellow , red);
+ 
+ }
+ .twitter:hover i{
+     color: white;
+     animation: shake 0.75s;
+ }
+ @keyframes shake{
+     10%{
+ transform: rotate(15deg);
+     }
+     20%{
+         transform: rotate(-15deg);
+     }
+     30%{
+         transform: rotate(15deg);
+     }
+     40%{
+         transform: rotate(-15deg);
+     }
+ }
+ footer{
+     margin: 3rem;
+     
+ }
+ .up-arrow{
+     float: right;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px;
+     margin-top: 2rem;
+     background-image: linear-gradient(to bottom right , yellow , red);
+     
+ }
+ .up-arrow:hover i{
+     color: white;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+
+ 
